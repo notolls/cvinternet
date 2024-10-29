@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulius Mantrimas Petrauskas - CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            
+            cursor: url('custom-cursor.jpg'), auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paulius Mantrimas Petrauskas</h1>
+        <p>Vilnius, Lithuania | +37069257321 | pauliusm.petrauskas@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/paulius-mantrimas-petrauskas-64199b253/">LinkedIn</a></li>
+                <li><a href="https://gitlab.com/pauliusmpetrauskas">GitLab</a></li>
+                <li><a href="https://github.com/notolls">GitHub</a></li>
+            </ul>
+        </nav>
+        <button id="loginButton">Login</button>
+        <div id="username"></div>
+        <button id="registerButton">Register</button>
+
+    </header>
+    <div class="background"></div>
+    <textarea id="htmlContent" style="width: 100%; height: 300px;"></textarea>
+    <button id="saveButton">Save</button>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>22-year-old 3rd-year Software Engineering student at Vilnius Tech. Dedicated IT professional providing unforgettable experiences to clients while maintaining an addiction to learning new technologies. Plagued with the overwhelming urge to tinker, figure things out, and build enterprise-level products.</p>
+    </section>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more images as needed -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <section id="skills">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <div class="nested-dropdown">
+                    <a href="#">Scripting languages</a>
+                    <div class="nested-dropdown-content">
+                        <a href="#">Bash</a>
+                        <a href="#">PowerShell</a>
+                    </div>
+                </div>
+                <div class="nested-dropdown">
+                <a href="#">Administration</a>
+                <div class="nested-dropdown-content">
+                    <a href="#">Active Directory</a>
+                    <a href="#">Azure Active Directory</a>
+                    <a href="#">GPO</a>
+                    <a href="#">Microsoft Intune</a>
+                </div>
+                </div>
+                <div class="nested-dropdown">
+                    <a href="#">Programming languages</a>
+                    <div class="nested-dropdown-content">
+                        <a href="#">C++</a>
+                        <a href="#">Java</a>
+                        <a href="#">Python</a>
+                        <a href="#">HTML5</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>                        
+                    </div>
+                    </div>
+                    <div class="nested-dropdown">
+                        <a href="#">Linux distros</a>
+                        <div class="nested-dropdown-content">
+                            <a href="#">Kali</a>
+                            <a href="#">Ubuntu</a>
+                            <a href="#">Manjaro</a>                     
+                        </div>
+                        </div>
+                        <div class="nested-dropdown">
+                            <a href="#">Technologies</a>
+                            <div class="nested-dropdown-content">
+                                <a href="#">Kubernetes</a>
+                                <a href="#">Docker</a>
+                                <a href="#">Helm</a>           
+                                <a href="#">Git</a>
+                                <a href="#">AWS </a>   
+                            </div>
+                            </div>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Scripting languages: Bash, PowerShell</li>
+            <li>Administration: Active Directory, Azure Active Directory, GPO, Microsoft Intune</li>
+            <li>Programming languages: C++, Java, Python, HTML5, CSS, JavaScript</li>
+            <li>Linux distros: Kali, Ubuntu, Manjaro</li>
+            <li>Technologies: Kubernetes, Docker, Helm, Git, AWS (S3, EC2, CloudFormation, EKS)</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <button onclick="toggleExperience()">Toggle Experience</button>
+        <div id="experienceDetails" style="display: none;">
+            <div class="job">
+                <h3>Systems Administrator</h3>
+                <p><strong>Reiz Tech</strong> | Vilnius, Lithuania</p>
+                <p>Duration: 1 year, 1 month</p>
+                <p>Learned internal IT infrastructure, Azure Active Directory, Active Directory, Azure DevOps, PowerShell scripting, SSL VPN, GPO, Windows 365 products and their administration, Microsoft 365 Admin Center, extended Windows knowledge, networking and internet technologies (VPN, LAN, WAN, VLAN, WiFi, DNS).</p>
+            </div>
+
+            <div class="job">
+                <h3>DevOps</h3>
+                <p><strong>Reiz Tech</strong> | Vilnius, Lithuania</p>
+                <p>Duration: (Duration)</p>
+                <p>Learned Development and Operations philosophy, Git, Docker, Kubernetes, Helm, Linux, AWS, GitLab.</p>
+            </div>
+
+            <div class="job">
+                <h3>Graduation Project</h3>
+                <p><strong>(Project Title)</strong></p>
+                <p>(Description)</p>
+            </div>
+
+            <div class="courses">
+                <h3>Udemy Courses</h3>
+                <ul>
+                    <li>Helm Masterclass</li>
+                    <li>Kubernetes</li>
+                    <li>Git</li>
+                    <li>GitLab CI/CD and DevOps for Beginners</li>
+                    <li>Linux Mastery</li>
+                    <li>Docker Fast Track</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paulius Mantrimas Petrauskas</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        function toggleExperience() {
+            var experienceDetails = document.getElementById("experienceDetails");
+            if (experienceDetails.style.display === "none") {
+                experienceDetails.style.display = "block";
+            } else {
+                experienceDetails.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
